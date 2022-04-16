@@ -1,0 +1,432 @@
+sub-heading-text
+.contact-team-outer-div{
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    background: #00000009;
+}
+
+.contact-team-title{
+    font-size: 2em;
+    font-weight: bold;
+    width: fit-content;
+    display: block;
+    margin-left: 37px;
+    padding: 0%;
+    padding-top: 16px;
+}
+
+.contact-team-title-underline{
+    background-color: #F45B21;
+    margin: 0px 0px 0px 3px;
+    height: 5px;
+    width: 50%;
+}
+
+.contact-team-left-div{
+
+    padding: 100px 50px;
+    display: flex;
+    align-items: center;
+
+    .heading-text{
+        font-size: 1.6em;
+        font-weight: bolder;
+    }
+
+    .sub-heading-text{
+        text-align: justify;
+        word-spacing:-1px;
+        font-weight: 600;
+        font-size: 1.2em;
+    }
+
+    .achievements{
+        display: flex;
+        padding: 40px 0px;
+        overflow-x: scroll;
+        text-align: center;
+
+        div{
+            padding: 0px 20px;
+        }
+        p{
+            margin: 0%;
+        }
+
+        .number{
+            font-size: 1.6em;
+            color: #6A2D94;
+            font-weight: bold;
+        }
+
+        .text{
+            font-size: 1.3em;
+            color: gray;
+        }
+
+    }
+}
+
+.contact-team-user-title{
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding: 20px 0px;
+}
+
+.contact-team-user-div{
+
+    .user-img{
+        width: 100px !important;
+        height: 140px !important;
+        border-top-left-radius: 130%;
+        border-top-right-radius: 200%;
+        border-bottom-left-radius: 150%;
+        border-bottom-right-radius: 100%;
+    }
+
+    .contact-team-user{
+        padding: 10px 20px;
+
+        .name{
+            font-size: 1.5em;
+            font-weight: bolder;
+            margin: 0%;
+            padding: 5px 0px;
+        }
+
+        .position{
+            font-size: 1.1em;
+        }
+
+        .icon-img{
+            width: 30px;
+            margin: 0px 10px;
+        }
+    }
+}
+
+.profile-count-outer-div{
+    padding: 50px 20px;
+
+    .profile-count{
+        padding: 0px 40px 0px 0px;
+
+        .count{
+            font-size: 2.5em;
+            font-weight: bolder;
+            margin: 0%;
+        }
+
+        .title{
+            font-size: 1em;
+        }
+    }
+}
+
+.company-carousel-img{
+    width: 100px !important;
+    border-radius: 50%;
+}
+
+.contact-team-right-div{
+    padding: 100px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-team-form{
+    background: #FFFFFF;
+    padding: 20px;
+    width: 530px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    .heading-fields{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .name, .email{
+        margin: 10px 0px;
+        width: 230px;
+        height: 50px;
+        padding: 10px;
+        border: 1px solid #979797;
+        border-radius: 10px;
+    }
+
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        border: none !important;
+        height: 100% !important;
+        border-radius: 10px !important;
+    }
+
+    .seeking, .about-us{
+        margin: 0px;
+        width: 100%;
+        height: 50px;
+        padding: 0px;
+        border: 1px solid #979797;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .user-contact-form-btn{
+        width: 100%;
+        text-align: center;
+        padding: 30px 0px;
+    }
+
+    a{
+        color: black;
+    }
+
+    a:hover{
+        color: black;
+    }
+
+    button{
+        background-color: #FFFFFF;
+        border: 1px solid #6A2D94;
+        color: #6A2D94;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-weight: bolder;
+        transition: all .5s;
+    }
+
+    button:hover{
+        background-color: #6A2D94;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+
+    .contact-team-right-div{
+        padding: 70px 0px;
+        display: flex;
+        justify-content: center;
+        p{
+            text-align: center;
+        }
+    }
+
+    .contact-team-form{
+        width: 650px;
+    
+        .message{
+            height: 200px;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1440px) {
+
+    .contact-team-right-div{
+        padding: 70px 0px;
+        display: flex;
+        justify-content: center;
+        p{
+            text-align: center;
+        }
+    }
+
+    .contact-team-form{
+        width: 530px;
+    
+        .message{
+            height: 200px;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .contact-team-outer-div{
+        padding: 30px 100px;
+    }
+
+    .contact-team-title{
+        font-size: 1.3em;
+        padding-top: 16px;
+    }
+
+    .contact-team-left-div{
+        padding: 10px;
+    }
+
+    .contact-team-user-title{
+        font-size: 1.3em;
+    }
+
+    .contact-team-user-div{
+    
+        .contact-team-user{
+            padding: 10px 20px;
+    
+            .name{
+                font-size: 1em;
+            }
+    
+            .position{
+                font-size: 1em;
+            }
+        }
+    }
+
+    .profile-count-outer-div{
+        padding: 50px 10px;
+    
+        .profile-count{   
+
+            .count{
+                font-size: 1.6em;
+            }
+    
+            .title{
+                font-size: 1em;
+            }
+        }
+    }
+
+    .contact-team-form{
+        width: 550px;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 540px) {
+
+    .contact-team-outer-div{
+        padding: 30px;
+    }
+
+    .contact-team-title{
+        font-size: 1.3em;
+        padding-top: 16px;
+
+    }
+
+    .contact-team-left-div{
+        padding: 10px;
+    }
+
+    .contact-team-user-title{
+        font-size: 1.2em;
+    }
+
+    .contact-team-user-div{
+    
+        .contact-team-user{
+            padding: 10px 20px;
+    
+            .name{
+                font-size: 1em;
+            }
+    
+            .position{
+                font-size: 1em;
+            }
+        }
+    }
+
+    .profile-count-outer-div{
+        padding: 50px 10px;
+    
+        .profile-count{   
+
+            .count{
+                font-size: 1.6em;
+            }
+    
+            .title{
+                font-size: 1em;
+            }
+        }
+    }
+
+    .contact-team-form{
+        background: #FFFFFF;
+        padding: 20px;
+        width: fit-content;
+
+        .heading-fields{
+            display: block;
+        }
+
+        .name, .email{
+            margin: 0px;
+            width: 100%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 414px) {
+
+    .contact-team-outer-div{
+        padding: 30px;
+    }
+
+    .contact-team-title{
+        font-size: 1.3em;
+        padding-top: 16px;
+    }
+
+    .contact-team-left-div{
+        padding: 10px;
+    }
+
+    .contact-team-user-title{
+        font-size: 1em;
+    }
+
+    .contact-team-user-div{
+    
+        .contact-team-user{
+            padding: 10px 20px;
+    
+            .name{
+                font-size: 1em;
+            }
+    
+            .position{
+                font-size: 1em;
+            }
+        }
+    }
+
+    .profile-count-outer-div{
+        padding: 50px 10px;
+        overflow: scroll;
+        overflow-x: scroll;
+        
+        .profile-count{   
+
+            .count{
+                font-size: 1.6em;
+            }
+    
+            .title{
+                font-size: 1em;
+            }
+        }
+    }
+
+    .contact-team-right-div{
+        padding: 50px 0px;
+    }
+
+    .contact-team-form{
+        width: 100%;
+    }
+}

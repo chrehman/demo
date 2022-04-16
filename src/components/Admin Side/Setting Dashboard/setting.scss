@@ -1,0 +1,221 @@
+
+.setting-card-outer-div{
+    padding: 20px 10px;
+    height: 500px;
+}
+
+.emails-card-outer-div{
+    padding: 20px 0px;
+}
+
+.setting-card{
+    border-radius: 10px !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 50px;
+    height: 100%;
+    overflow-y: scroll;
+
+    .accounts-div{
+        overflow: scroll;
+        overflow-y: scroll;
+    }
+
+    .accounts-div::-webkit-scrollbar{
+        display: none;
+    }
+
+    .single-account{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #eeeeee;
+    
+        p{
+            margin: 0%;
+            font-size: 1.3em;
+            display: flex;
+            align-items: center;
+        }
+    
+        span{
+            font-size: 1.3em;
+            height: fit-content;
+            width: fit-content;
+            color: #ff0000;
+            padding: 5px;
+        }
+    
+        span:hover{
+            cursor: pointer;
+            background-color: #ff0000;
+            color: #ffffff;
+
+            span{
+                cursor: pointer;
+                background-color: #ff0000;
+                color: #ffffff;
+            }
+        }
+    }
+    
+    .single-account:hover{
+        background-color: #eeeeee;
+        cursor: pointer;
+    }
+    
+    .accounts-btn-div{
+        padding: 20px 0px;
+        display: flex;
+        justify-content: space-between;
+    
+        .active{
+            background-color: #ffffff;
+            border: 1px solid #F45B21;
+            color: #F45B21;
+            font-size: 1.2em;
+            padding: 5px 10px;
+            border-radius: 10px;
+            transition: all .5s;
+        }
+    
+        .active:hover{
+            background-color: #F45B21;
+            color: #ffffff;
+        }
+    
+        .disable{
+            border: 1px solid #eeeeee;
+            color: #eeeeee;
+            font-size: 1.2em;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+    }
+
+    .setting-btn{
+        border: 1px solid #F45B21;
+        color: #F45B21;
+        font-weight: 600;
+        padding: 10px 15px;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        transition: all .5s;
+    }
+
+    .setting-btn:hover{
+        background-color: #F45B21;
+        color: #ffffff;
+    }
+
+    .generate-btn-div{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        
+        div{
+            width: fit-content;
+            height: fit-content;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #F45B21;
+            border-radius: 10px;
+            color: #F45B21;
+            font-size: 1.3em; 
+            transition: all .5s;
+        }
+
+        div:hover{
+            background-color: #F45B21;
+            color: #ffffff;
+            cursor: pointer;
+        }
+    }
+
+    .generate-spin-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+
+        div{
+            width: fit-content;
+            height: fit-content;
+            text-align: center;
+
+            span{
+                color: #F45B21 !important;
+            }
+        }
+    }
+
+    .generated-account-div{
+
+        p{
+            font-size: 1.2em;
+            font-weight: 600;
+            margin: 0%;
+            padding: 10px 0px;
+
+            span{
+                font-weight: 600;
+                color: gray;
+            }
+        }
+
+        button{
+            border: 1px solid #F45B21;
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin: 10px 0px;
+            color: #F45B21;
+            background-color: #ffffff;
+            font-weight: 600;
+            transition: all .5s;
+        }
+
+        button:hover{
+            background-color: #F45B21;
+            color: #ffffff;
+        }
+    }
+
+    .emails-div{
+        padding: 0px 0px 30px 0px;
+        p{
+            font-size: 1.2em;
+            font-weight: 600;
+            display: flex;
+            margin: 0%;
+            padding: 10px 0px;
+    
+            span{
+                font-weight: 600;
+                color: gray;
+            }
+        }
+    }
+}
+
+.setting-card::-webkit-scrollbar{
+    display: none;
+}
+
+@media screen and (max-width: 540px) {
+
+    .setting-card{
+
+        .emails-div{
+
+            p{
+                font-size: 1em;
+                font-weight: normal;
+                
+                span{
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+
+}

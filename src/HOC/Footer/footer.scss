@@ -1,0 +1,399 @@
+
+.footer-outer-div{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    background: url('./images/footer-background.png') no-repeat center;
+    background-size: cover;
+}
+
+.footer-inner-div{
+    margin: 0% !important;
+    padding: 50px 0px !important;
+}
+
+.footer-logo-div{
+    margin: 0% !important;
+    padding: 0% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo{
+    width: 250px;
+}
+
+.footer-title{
+    font-size: 1.5em;
+    font-weight: bold;
+    width: fit-content;
+    display: block;
+    margin: 0%;
+    padding: 0%;
+    color: #ffffff;
+}
+
+.footer-title-underline{
+    background-color: #F45B21;
+    margin: 0px 0px 0px 3px;
+    height: 5px;
+    width: 50%;
+}
+
+.footer-services{
+    padding: 10px 0px;
+    a{
+        font-size: 1.2em;
+        font-weight: 600;
+        display: block;
+        padding: 5px 0px;
+        color: #979797;
+    }
+    a:hover{
+        color: #D8D8D8;
+    }
+}
+
+.footer-contact-details-div{
+    padding: 10px 0px;
+    span{
+        display: block;
+        font-size: 1.2em;
+        font-weight: 600;
+        padding: 5px 0px;
+        color: #979797;
+    }
+    span:hover{
+        color: #D8D8D8;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    a{
+        color: #979797;
+        font-size: 1.2em;
+        font-weight: 600;
+        display: block;
+        padding: 5px 0px;
+    }
+
+    a:hover{
+        color: #D8D8D8;
+    }
+
+    .address-icon{
+        width: 20px;
+        margin: 0px 5px;
+    }
+
+    .number-icon{
+        width: 30px;
+        margin: 0px 5px 0px 0px;
+    }
+
+    .mail-icon{
+        width: 30px;
+        margin: 0px 5px 0px 0px;
+    }
+}
+
+.newsletter-label{
+    color: #ffffff;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.newsletter-div{
+    display: flex;
+    span{
+        background-color: #F45B21;
+        color: #ffffff;
+        font-size: 2em;
+        padding: 0px 10px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    span:hover{
+        cursor: pointer;
+    }
+
+    .newsletter_field{
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border: 1px solid #F45B21;
+        width: 100%;
+        font-size: 1.2em;
+        padding: 0px 10px;
+    }
+
+    .newsletter_field:focus{
+        border: 1px solid #F45B21;
+    }
+}
+
+.footer-bottom-div{
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #979797;
+
+    p{
+        color: #979797;
+        margin: 0%;
+    }
+
+    .bottom-icon{
+        width: fit-content;
+        height: fit-content;
+        padding: 12px 17px 15px 17px;
+        margin: 0px 10px;
+        border-radius: 50%;
+        background-color: #2E2E2E;
+        color: #D8D8D8;
+        font-size: 1.2em;
+    }
+
+    .bottom-icon:hover{
+        background-color: #F45B21;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+
+    .footer-inner-div{
+        padding: 0px 0px 30px 0px !important;
+    }
+
+    .footer-logo{
+        width: 300px;
+    }
+    
+    .footer-title{
+        font-size: 2em;
+    }
+
+    .footer-services{
+        a{
+            font-size: 1.5em;
+        }
+    }
+    
+    .footer-contact-details-div{
+
+        span{
+            font-size: 1.5em;
+        }
+
+        a{
+            font-size: 1.5em;
+        }
+
+        .address-icon{
+            width: 25px;
+        }
+    
+        .number-icon{
+            width: 35px;
+        }
+    
+        .mail-icon{
+            width: 35px;
+        }
+    }
+
+    .footer-bottom-div{
+        padding: 30px 50px;
+
+        p{
+            font-size: 1.5em;
+        }
+    
+        .bottom-icon{
+            width: fit-content;
+            height: fit-content;
+            padding: 12px 17px 15px 17px;
+            margin: 0px 10px;
+            border-radius: 50%;
+            background-color: #2E2E2E;
+            color: #D8D8D8;
+            font-size: 1.5em;
+        }
+    
+        .bottom-icon:hover{
+            background-color: #F45B21;
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+
+    .footer-inner-div{
+        padding: 0px 0px 30px 0px !important;
+    }
+
+    .footer-logo{
+        width: 200px;
+    }
+    
+    .footer-title{
+        font-size: 1.3em;
+    }
+
+    .footer-services{
+        a{
+            font-size: 1em;
+        }
+    }
+    
+    .footer-contact-details-div{
+
+        span{
+            font-size: 1em;
+        }
+    
+        a{
+            font-size: 1em;
+        }
+    
+        .address-icon{
+            width: 15px;
+            margin: 0px 5px;
+        }
+    
+        .number-icon{
+            width: 25px;
+            margin: 0px 5px 0px 0px;
+        }
+    
+        .mail-icon{
+            width: 25px;
+            margin: 0px 5px 0px 0px;
+        }
+    }
+
+    .footer-bottom-div{
+        padding: 25px 50px;
+    
+        p{
+            font-size: 1em;
+        }
+    
+        .bottom-icon{
+            padding: 12px 15px 15px 15px;
+            font-size: 1em;
+        }
+
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .footer-inner-div{
+        padding: 30px 0px 30px 0px !important;
+    }
+
+    .footer-logo-div{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    .footer-inner-div{
+        padding: 30px 20px 30px 20px !important;
+    }
+
+    .mobile-view-edit{
+        padding: 0px 12px 20px 12px;
+    }
+
+    .footer-logo-div{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-logo{
+        width: 150px;
+    }
+    
+    .footer-title{
+        font-size: 1em;
+    }
+
+    .footer-services{
+        a{
+            font-size: 1em;
+        }
+    }
+    
+    .footer-contact-details-div{
+
+        span{
+            font-size: 1em;
+        }
+    
+        a{
+            font-size: 1em;
+        }
+    
+        .address-icon{
+            width: 10px;
+            margin: 0px 5px;
+        }
+    
+        .number-icon{
+            width: 20px;
+            margin: 0px 5px 0px 0px;
+        }
+    
+        .mail-icon{
+            width: 20px;
+            margin: 0px 5px 0px 0px;
+        }
+    }
+
+    .footer-bottom-div{
+        padding: 10px 20px;
+        display: block;
+    
+        p{
+            text-align: center;
+            font-size: 1em;
+            padding: 5px 0px;
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+        }
+    
+        .bottom-icon{
+            margin: 0px 5px;
+            padding: 8px 13px 11px 13px;
+            font-size: 0.8em;
+        }
+
+    }
+}
+
+@media screen and (max-width: 390px) {
+
+    .footer-logo-div{
+        padding: 0px 0px 10px 0px !important;
+    }
+
+    .footer-inner-div{
+        padding: 30px 10px 30px 10px !important;
+    }
+
+    .mobile-view-edit{
+        padding: 0px 12px 20px 12px;
+    }
+}

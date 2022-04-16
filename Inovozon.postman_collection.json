@@ -1,0 +1,984 @@
+{
+	"info": {
+		"_postman_id": "0d953a81-f1a5-4c4d-91b8-1df48b623a66",
+		"name": "Inovozon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "check-session",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW5vdm96b24iLCJpYXQiOjE2NDU2OTMyNTUsImV4cCI6MTY0NTY5Njg1NSwiYXVkIjoiW29iamVjdCBVbmRlZmluZWRdIiwiaXNzIjoiaW5vdm96b24uY29tIn0.2fXOY_FwZWLjnGLQX76N3d861Ipj3ESHq1vv_AvzSPE",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"adminId\": \"61e85831e80d643e597e2255\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/admin/session",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"session"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "generate-account",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW5vdm96b24iLCJpYXQiOjE2NDU2ODEwMTQsImV4cCI6MTY0NTY4NDYxNCwiYXVkIjoiW29iamVjdCBVbmRlZmluZWRdIiwiaXNzIjoiaW5vdm96b24uY29tIn0.357i2YUyb0zAh4977-CuaxcwweHbhDoQWoqRoo4l6V8",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/admin/generate_account",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"generate_account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-accounts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW5vdm96b24iLCJpYXQiOjE2NDU2ODEwMTQsImV4cCI6MTY0NTY4NDYxNCwiYXVkIjoiW29iamVjdCBVbmRlZmluZWRdIiwiaXNzIjoiaW5vdm96b24uY29tIn0.357i2YUyb0zAh4977-CuaxcwweHbhDoQWoqRoo4l6V8",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"page\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/admin/get_accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"get_accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin-register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Admin\",\n    \"password\": \"pass4test\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/admin/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin-login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW5vdm96b24iLCJpYXQiOjE2NDUwNTY3NDcsImV4cCI6MTY0NTA2MDM0NywiYXVkIjoiW29iamVjdCBVbmRlZmluZWRdIiwiaXNzIjoiaW5vdm96b24uY29tIn0.Bne_uQdv8Rf8E4t7Vgo8xo7wmM10NXaSjjNofNl_Oxw",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Admin\",\n    \"password\": \"pass4test\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/admin/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-account",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW5vdm96b24iLCJpYXQiOjE2NDU2ODI3NjEsImV4cCI6MTY0NTY4NjM2MSwiYXVkIjoiW29iamVjdCBVbmRlZmluZWRdIiwiaXNzIjoiaW5vdm96b24uY29tIn0.m6SWc0CSg62y18maqsbbrUJa8W4ntVjHZbK9f3DCbQU",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"adminId\": \"62171c92f983d2a1d149ad10\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/admin/delete_account",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"delete_account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "change-password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW5vdm96b24iLCJpYXQiOjE2NDU2ODI3NjEsImV4cCI6MTY0NTY4NjM2MSwiYXVkIjoiW29iamVjdCBVbmRlZmluZWRdIiwiaXNzIjoiaW5vdm96b24uY29tIn0.m6SWc0CSg62y18maqsbbrUJa8W4ntVjHZbK9f3DCbQU",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"password\": \"rootpass\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/admin/change_password",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"change_password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-newsletterEmail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"test20@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/newsletter/add_email",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newsletter",
+						"add_email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-newsletterEmail",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW5vdm96b24iLCJpYXQiOjE2NDM2MzQwMDYsImV4cCI6MTY0MzYzNzYwNiwiYXVkIjoiW29iamVjdCBVbmRlZmluZWRdIiwiaXNzIjoiaW5vdm96b24uY29tIn0.GM9e3v8yFypUnAiDvh_IBUSmqHrKYmCWtqLB8E175no",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"test@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/newsletter/delete_email",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newsletter",
+						"delete_email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-newsletterEmail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW5vdm96b24iLCJpYXQiOjE2NDM2MzQwMDYsImV4cCI6MTY0MzYzNzYwNiwiYXVkIjoiW29iamVjdCBVbmRlZmluZWRdIiwiaXNzIjoiaW5vdm96b24uY29tIn0.GM9e3v8yFypUnAiDvh_IBUSmqHrKYmCWtqLB8E175no",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"pageNo\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/newsletter/get_email",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newsletter",
+						"get_email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-vacancie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW5vdm96b24iLCJpYXQiOjE2NDM2MjM1ODYsImV4cCI6MTY0MzYyNzE4NiwiYXVkIjoiW29iamVjdCBVbmRlZmluZWRdIiwiaXNzIjoiaW5vdm96b24uY29tIn0.yXFP4o-AzrUTIuHJzKas-qC8pa44zWkZ7zersfc9MP0",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"ML Development\",\n    \"role\": \"Handling full stack web apps\",\n    \"discription\": \"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.\"\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/vacancie/add_vacancie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vacancie",
+						"add_vacancie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-vacancie",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW5vdm96b24iLCJpYXQiOjE2NDQ5MzM2NDIsImV4cCI6MTY0NDkzNzI0MiwiYXVkIjoiW29iamVjdCBVbmRlZmluZWRdIiwiaXNzIjoiaW5vdm96b24uY29tIn0.sQpwyOpsdbJZmnUxBN0ENPOqdcPyh5M-SfqrMP6SWN8",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"61f7b4d56f92e4d0efbcacbf\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/vacancie/delete_vacancie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vacancie",
+						"delete_vacancie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-vacancie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW5vdm96b24iLCJpYXQiOjE2NDM0NDQ1NjYsImV4cCI6MTY0MzQ0ODE2NiwiYXVkIjoiW29iamVjdCBVbmRlZmluZWRdIiwiaXNzIjoiaW5vdm96b24uY29tIn0.4VxBa1oKyM7eZeSwC7HzK8kJyRMMO5CWhTDvauWbgKE",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"61f5004770f8eb6161006983\",\n    \"title\": \"App Development\",\n    \"role\": \"Handling full stack web apps\",\n    \"discription\": \"MERN Stack skills\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/vacancie/update_vacancie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vacancie",
+						"update_vacancie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-vacancies",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"page\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/vacancie/get_vacancies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vacancie",
+						"get_vacancies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-vacancie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"61f51fe267b8425f2125d84b\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/vacancie/get_vacancie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vacancie",
+						"get_vacancie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-mail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Afaq\",\n    \"email\": \"afaq.javed2327@gmail.com\",\n    \"seeking\": \"collaboration\",\n    \"hearAboutUs\": \"Social Media\",\n    \"discription\": \"I want a team that can collaborate with us on our project\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/mail/add_mail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"mail",
+						"add_mail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-mails",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW5vdm96b24iLCJpYXQiOjE2NDUwNTY3NDcsImV4cCI6MTY0NTA2MDM0NywiYXVkIjoiW29iamVjdCBVbmRlZmluZWRdIiwiaXNzIjoiaW5vdm96b24uY29tIn0.Bne_uQdv8Rf8E4t7Vgo8xo7wmM10NXaSjjNofNl_Oxw",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"page\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/mail/get_mails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"mail",
+						"get_mails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-mail",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW5vdm96b24iLCJpYXQiOjE2NDUxMDgzNDAsImV4cCI6MTY0NTExMTk0MCwiYXVkIjoiW29iamVjdCBVbmRlZmluZWRdIiwiaXNzIjoiaW5vdm96b24uY29tIn0.r-d_BucsFDBg6kL6Zwhxqd5AFaOp2MKdcMwGUdD8OwA",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"mailId\": \"620d98e82735a5043651c1be\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/mail/delete_mail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"mail",
+						"delete_mail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-package-request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Afaq\",\n    \"email\": \"afaq.javed006@gmail.com\",\n    \"phone\": \"03068889897\",\n    \"discription\": \"This is a test discription.\",\n    \"package\": \"Dedicated Team\",\n    \"developerNeed\": \"\",\n    \"duration\": \"1-3 Months\",\n    \"projectDomain\": \"\",\n    \"platform\": \"\",\n    \"developerCount\": \"2-6 Developers\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/pricing/add_package_request",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"pricing",
+						"add_package_request"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-package-requests",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW5vdm96b24iLCJpYXQiOjE2NDU1ODAxMjQsImV4cCI6MTY0NTU4MzcyNCwiYXVkIjoiW29iamVjdCBVbmRlZmluZWRdIiwiaXNzIjoiaW5vdm96b24uY29tIn0.ZJZDkmFbxd8r7lZfWALnjaE7wVQsCYxk29ERumjDzMc",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"page\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/pricing/get_package_requests",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"pricing",
+						"get_package_requests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-package-request",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW5vdm96b24iLCJpYXQiOjE2NDUxMDgzNDAsImV4cCI6MTY0NTExMTk0MCwiYXVkIjoiW29iamVjdCBVbmRlZmluZWRdIiwiaXNzIjoiaW5vdm96b24uY29tIn0.r-d_BucsFDBg6kL6Zwhxqd5AFaOp2MKdcMwGUdD8OwA",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"packageId\": \"620e5ba144c1578ebfe529dc\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/pricing/delete_package_request",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"pricing",
+						"delete_package_request"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send-newsletter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "dafa",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"subject\": \"subject\",\n    \"message\": \"message\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/contact/send_newsletter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"contact",
+						"send_newsletter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send-mail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW5vdm96b24iLCJpYXQiOjE2NDU1ODAxMjQsImV4cCI6MTY0NTU4MzcyNCwiYXVkIjoiW29iamVjdCBVbmRlZmluZWRdIiwiaXNzIjoiaW5vdm96b24uY29tIn0.ZJZDkmFbxd8r7lZfWALnjaE7wVQsCYxk29ERumjDzMc",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"afaq.javed006@gmail.com\",\n    \"subject\": \"Inovozon\",\n    \"message\": \"This is a test mail!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/contact/send_mail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"contact",
+						"send_mail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-uploadUrl",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/applicant/s3Url",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"applicant",
+						"s3Url"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-applicant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Salman Mazhar\",\n    \"email\": \"salmansop123@gmail.com\",\n    \"phone\": \"03068889897\",\n    \"resume\": \"url\",\n    \"position\": \"MEAN\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/applicant/add_applicant",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"applicant",
+						"add_applicant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_applicants",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW5vdm96b24iLCJpYXQiOjE2NDU2NzMxMzcsImV4cCI6MTY0NTY3NjczNywiYXVkIjoiW29iamVjdCBVbmRlZmluZWRdIiwiaXNzIjoiaW5vdm96b24uY29tIn0.fqZ0RbcLKU-JjcUEdwDPCoxPV4fA2R47S-anDa451zQ",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"page\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/applicant/get_applicants",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"applicant",
+						"get_applicants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-applicant",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW5vdm96b24iLCJpYXQiOjE2NDU2NzMxMzcsImV4cCI6MTY0NTY3NjczNywiYXVkIjoiW29iamVjdCBVbmRlZmluZWRdIiwiaXNzIjoiaW5vdm96b24uY29tIn0.fqZ0RbcLKU-JjcUEdwDPCoxPV4fA2R47S-anDa451zQ",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"applicantId\": \"6216faa71179c3101256893d\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/applicant/delete_applicant",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"applicant",
+						"delete_applicant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-emails",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW5vdm96b24iLCJpYXQiOjE2NDYwODA1OTAsImV4cCI6MTY0NjA4NDE5MCwiYXVkIjoiW29iamVjdCBVbmRlZmluZWRdIiwiaXNzIjoiaW5vdm96b24uY29tIn0.HHLHeM8PJqCSM-oXczo2qdkMz4NBOBPzfV8BtSQIKZw",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/emails/get_emails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"emails",
+						"get_emails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-emails",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW5vdm96b24iLCJpYXQiOjE2NDYxMTg2NjIsImV4cCI6MTY0NjEyMjI2MiwiYXVkIjoiW29iamVjdCBVbmRlZmluZWRdIiwiaXNzIjoiaW5vdm96b24uY29tIn0.Hiztvy7EIil20Z9-j62jY4K3llcnrJXVQ89wpYx_d8g",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"clientEmail\": \"datamanager019@gmail.com\",\n    \"clientEmailPassword\": \"p@ss4test\",\n    \"applicantEmail\": \"datamanager019@gmail.com\",\n    \"applicantEmailPassword\": \"p@ss4test\",\n    \"sendingEmail\": \"datamanager019@gmail.com\",\n    \"sendingEmailPassword\": \"p@ss4test\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/emails/add_emails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"emails",
+						"add_emails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-emails",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW5vdm96b24iLCJpYXQiOjE2NDYwNjgwODAsImV4cCI6MTY0NjA3MTY4MCwiYXVkIjoiW29iamVjdCBVbmRlZmluZWRdIiwiaXNzIjoiaW5vdm96b24uY29tIn0.il5kDYCtZ28GDZFdBRkySTaB_3VRlHkorOkqSxk6xPo",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"621d01fe59afa28b76317d3e\",\n    \"email\": \"datamanager019@gmail.com\",\n    \"password\": \"p@ss4test\",\n    \"type\": \"applicant\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/emails/update_emails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"emails",
+						"update_emails"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

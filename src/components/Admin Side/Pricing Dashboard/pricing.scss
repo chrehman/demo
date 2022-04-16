@@ -1,0 +1,104 @@
+
+.collaboration-request-card{
+    border-radius: 10px !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 50px;
+
+    .collaboration-requests-div{
+        .header-fields{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .labels{
+        font-size: 1.2em;
+        font-weight: 600;
+        display: flex;
+        margin: 0%;
+        padding: 10px 0px;
+
+        span{
+            font-weight: 600;
+            color: gray;
+        }
+
+        button{
+            background: none;
+            border: none;
+            text-decoration: underline;
+        }
+    }
+
+    .delete-btn{
+        display: flex;
+        align-items: center;
+        padding: 0px 10px;
+        font-size: 1.3em;
+
+        span{
+            color: #ff0000;
+            background-color: #ffffff;
+            padding: 0px 10px;
+            margin: 0%;
+        }
+        
+    }
+
+    .delete-btn:hover{
+        cursor: pointer;
+        span{
+            font-weight: bolder;
+        }
+    }
+
+    .collaboration-request-btn-div{
+
+        padding: 20px 0px;
+        display: flex;
+        justify-content: space-between;
+    
+        .active{
+            background-color: #ffffff;
+            border: 1px solid #F45B21;
+            color: #F45B21;
+            font-size: 1.2em;
+            padding: 5px 10px;
+            border-radius: 10px;
+            transition: all .5s;
+        }
+    
+        .active:hover{
+            background-color: #F45B21;
+            color: #ffffff;
+        }
+    
+        .disable{
+            border: 1px solid #eeeeee;
+            color: #eeeeee;
+            font-size: 1.2em;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    .collaboration-request-card{
+
+        .collaboration-requests-div{
+            .header-fields{
+                display: block;
+            }
+        }
+    
+        p{
+            font-size: 1em;
+            font-weight: normal;
+    
+            span{
+                font-weight: normal;
+            }
+        }
+    }
+}

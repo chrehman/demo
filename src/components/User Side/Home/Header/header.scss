@@ -1,0 +1,493 @@
+.header-outer-div{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0%;
+    margin: 0%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.logo{
+    width: 250px;
+    height: 80px;
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+.features-btns-div{
+    padding: 30px 30px;
+    display: flex;
+    height: fit-content;
+}
+
+.header-btns{
+    padding: 0px 50px;
+}
+
+.header-active-feature{
+    padding: 10px;
+    font-size: 1.4em;
+    color: #ffffff;
+    font-weight: bold;
+    border-bottom: 3px solid #F45B21;
+    text-decoration: none;
+}
+
+.header-active-feature:hover{
+    color: #ffffff;
+}
+
+.header-non-active-feature{
+    padding: 10px;
+    font-size: 1.2em;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header-non-active-feature:hover{
+    cursor: pointer;
+    color: #ffffff;
+    border-bottom: 3px solid #F45B21;
+}
+
+.contact-us-btn{
+    background-color: #F45B21;
+    padding: 13px 50px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact-us-btn:hover{
+    color: #ffffff;
+}
+
+.mobile-view-header{
+    display: none;
+}
+
+
+.header-canvas-btns-div{
+    a,span{
+        padding: 10px;
+        font-size: 1.3em;
+        font-weight: bold;
+        text-decoration: none;
+        display: block;
+        color: #000000;
+    }
+
+    a:hover,span:hover{
+        cursor: pointer;
+        color: #000000;
+        border-bottom: 3px solid #F45B21;
+    }
+}
+
+.header-img-div{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.header-img{
+    display: block;
+}
+
+.header-text-div{
+    color: #ffffff;
+    position: absolute;
+    top: 0%;
+    z-index: 1;
+    padding: 150px 100px;
+}
+
+.header-text1{
+    font-weight: bolder;
+    font-size: 2.5em;
+}
+
+.header-text2{
+    font-weight: bolder;
+    font-size: 3.5em;
+    margin: 0%;
+}
+
+
+.header2-img-div{
+    background: url('./images/header2-bg.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.header2-text-div{
+    color: #ffffff;
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    padding: 0px;
+}
+
+.header2-text1{
+    font-weight: 600;
+    font-size: 3em;
+}
+
+.header2-text2{
+    font-weight: bolder;
+    font-size: 3em;
+    margin: 0%;
+}
+
+@media screen and (min-width: 2560px) {
+
+    .logo{
+        width: 300px;
+        height: 100px;
+        margin-top: 2px;
+        margin-left: 5px;
+    }
+
+    .header-non-active-feature{
+        padding: 10px;
+        font-size: 1.8em;
+        color: #ffffff;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .contact-us-btn{
+        background-color: #F45B21;
+        padding: 15px 50px;
+        border-radius: 5px;
+        font-size: 1.8em;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .header-text-div{
+        color: #ffffff;
+        position: absolute;
+        top: 0%;
+        z-index: 1;
+        padding: 250px 100px;
+    }
+
+    .header-text1{
+        font-weight: bolder;
+        font-size: 3em;
+    }
+    
+    .header-text2{
+        font-weight: bolder;
+        font-size: 5em;
+        margin: 0%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+
+    .logo{
+        width: 200px;
+        height: 70px;
+        margin-top: 12px;
+        margin-left: 5px;
+    }
+
+    .header-non-active-feature{
+        font-size: 1.2em;
+    }
+
+    .contact-us-btn{
+        padding: 10px 20px;
+        font-size: 1.2em;
+    }
+
+    .header-text-div{
+        margin-top: 45px;
+        padding: 200px 100px;
+    }
+    
+    .header-text1{
+        font-size: 2.5em;
+    }
+    
+    .header-text2{
+        font-size: 2em;
+    }
+    
+    .header2-text-div{
+        bottom: 60px;
+        left: 100px;
+    }
+    
+    .header2-text1{
+        font-size: 2em;
+    }
+    
+    .header2-text2{
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .logo{
+        width: 150px;
+        height: 59px;
+        margin-top: 14px;
+        margin-left: 15px;
+    
+    }
+
+    .header-non-active-feature{
+        font-size: 1em;
+    }
+
+    .contact-us-btn{
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .header-text-div{
+        padding: 150px 70px;
+    }
+    
+    .header-text1{
+        font-size: 2em;
+    }
+    
+    .header-text2{
+        font-size: 1.5em;
+    }
+
+    .header2-text-div{
+        bottom: 40px;
+        left: 60px;
+    }
+    
+    .header2-text1{
+        font-size: 2em;
+    }
+    
+    .header2-text2{
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 912px) {
+
+    .header-logo-div{
+        display: flex;
+        align-items: center;
+    }
+
+    .logo{
+        width: 130px;
+        height: 49px;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+
+    .features-btns-div{
+        padding: 30px 0px;
+    }
+    
+    .header-btns{
+        padding: 0px 0px;
+    }
+
+    .header-non-active-feature{
+        font-size: 0.8em;
+    }
+
+    .contact-us-btn{
+        padding: 10px 20px;
+        font-size: 0.8em;
+    }
+
+    .header-text-div{
+        padding: 120px 50px;
+    }
+    
+    .header-text1{
+        font-size: 1.5em;
+    }
+    
+    .header-text2{
+        font-size: 1.2em;
+    }
+
+    .header2-img-div{
+        height: 50vh;
+    }
+
+    .header2-text-div{
+        bottom: 40px;
+        left: 60px;
+    }
+    
+    .header2-text1{
+        font-size: 1.5em;
+    }
+    
+    .header2-text2{
+        font-size: 1.5em;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .header2-img-div{
+        height: 60vh;
+    }
+
+    .header2-text-div{
+        bottom: 40px;
+        left: 60px;
+    }
+    
+    .header2-text1{
+        font-size: 1.5em;
+    }
+    
+    .header2-text2{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    .header-outer-div{
+        display: none;
+    }
+
+    .mobile-view-header{
+        display: block;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        padding: 10px 20px;
+        position: absolute;
+        top: 0%;
+        margin: 0%;
+        z-index: 2;
+
+        button {
+            background: none;
+            border: none;
+            color: #ffffff;
+            font-size: 1.3em;
+            font-weight: bolder;
+        }
+
+        div{
+            width: 100%;
+        }
+    }
+
+    .header-canvas-btns-div{
+        a,span{
+            font-size: 1em;
+        }
+    }
+
+    .header-text-div{
+        padding: 100px 50px;
+    }
+    
+    .header-text1{
+        font-size: 1.2em;
+        margin: 0px;
+    }
+    
+    .header-text2{
+        font-size: 1.2em;
+    }
+
+    .header2-img-div{
+        height: 40vh;
+    }
+
+    .header2-text-div{
+        bottom: 40px;
+        left: 40px;
+    }
+    
+    .header2-text1{
+        font-size: 1.3em;
+    }
+    
+    .header2-text2{
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 414px) {
+
+    .header-text-div{
+        padding: 130px 50px 0px 20px;
+    }
+    
+    .header-text1{
+        font-size: 1em;
+    }
+    
+    .header-text2{
+        font-size: 1em;
+
+        br{
+            display: none;
+        }
+    }
+
+    .header2-text-div{
+        bottom: 40px;
+        left: 20px;
+    }
+
+    .header2-text1{
+        font-size: 1em;
+    }
+    
+    .header2-text2{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 390px) {
+
+    .header-text-div{
+        padding: 120px 50px 0px 30px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+
+    .header-text-div{
+        padding: 80px 30px 0px 20px;
+    }
+
+    .header2-text-div{
+        bottom: 30px;
+        left: 20px;
+    }
+    
+    .header2-text1{
+        font-size: 1em;
+    }
+    
+    .header2-text2{
+        font-size: 1em;
+    }
+}

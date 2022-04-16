@@ -1,0 +1,131 @@
+.contact-header-outer-div{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #191919;
+}
+
+.contact-header-logo{
+    width: 200px;
+}
+
+.contact-features-btns-div{
+    padding: 30px 30px;
+    display: flex;
+    height: fit-content;
+}
+
+.contact-header-btns{
+    padding: 0px 50px;
+}
+
+.contact-active-feature{
+    padding: 10px;
+    font-size: 1.4em;
+    color: #ffffff;
+    font-weight: bold;
+    border-bottom: 3px solid #F45B21;
+    text-decoration: none;
+}
+
+.contact-active-feature:hover{
+    color: #ffffff;
+}
+
+.contact-non-active-feature{
+    padding: 10px;
+    font-size: 1.4em;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-non-active-feature:hover{
+    color: #ffffff;
+}
+
+.contact-header-btn{
+    background-color: #F45B21;
+    padding: 13px 50px;
+    border-radius: 5px;
+    font-size: 1.4em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact-header-btn:hover{
+    color: #ffffff;
+}
+
+.contact-us-mobile-view-header{
+    display: none;
+}
+
+
+@media screen and (min-width: 2560px) {
+
+    .contact-header-logo{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+
+    .contact-header-logo{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .contact-header-logo{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 912px) {
+
+    .header-logo-div{
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-header-logo{
+        width: 130px;
+    }
+
+    .contact-features-btns-div{
+        padding: 30px 0px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    .contact-header-outer-div{
+        display: none;
+    }
+
+    .contact-us-mobile-view-header{
+        background-color: #191919;
+        display: block;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        padding: 10px 20px;
+
+        button {
+            background: none;
+            border: none;
+            color: #ffffff;
+            font-size: 1.3em;
+            font-weight: bolder;
+        }
+
+        div{
+            width: 100%;
+        }
+    }
+}
+

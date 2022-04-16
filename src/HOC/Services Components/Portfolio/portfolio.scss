@@ -1,0 +1,255 @@
+.work-portfolio-outer-div{
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+}
+
+.work-portfolio-title{
+    font-size: 2em;
+    font-weight: bold;
+    width: fit-content;
+    display: block;
+    margin: 0%;
+    padding: 0%;
+}
+
+.work-portfolio-title-underline{
+    background-color: #F45B21;
+    margin: 0px 0px 0px 3px;
+    height: 5px;
+    width: 50%;
+}
+
+
+.work-portfolio-div{
+    padding: 100px 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.work-portfolio-company-div{
+    p{
+        background-color: #F45B21;
+        color: #FFFFFF;
+        padding: 120px 100px;
+        border-radius: 50%;
+        width: fit-content;
+        text-align: center;
+    }
+}
+
+.work-portfolio-company-review-div{
+    padding: 50px 130px;
+
+    .comment{
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    .name{
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+
+    .work-portfolio-outer-div{
+        padding: 50px;
+    }
+    
+    .work-portfolio-title{
+        font-size: 1.6em;
+    }
+
+    .work-portfolio-div{
+        padding: 50px 100px;
+    }
+
+    .work-portfolio-company-div{
+        p{
+            padding: 80px 60px;
+        }
+    }
+    
+    .work-portfolio-company-review-div{
+        padding: 40px 50px;
+    
+        .comment{
+            font-size: 1em;
+            font-weight: 600;
+        }
+    
+        .name{
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .work-portfolio-outer-div{
+        padding: 30px 50px;
+    }
+    
+    .work-portfolio-title{
+        font-size: 1.3em;
+    }
+
+    .work-portfolio-div{
+        padding: 20px 40px;
+        display: block;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .work-portfolio-company-div{
+        p{
+            padding: 60px 40px;
+        }
+    }
+    
+    .work-portfolio-company-review-div{
+        padding: 20px 20px;
+    
+        .comment{
+            font-size: 1em;
+            font-weight: normal;
+        }
+    
+        .name{
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+
+    .work-portfolio-outer-div{
+        padding: 30px 10px;
+    }
+    
+    .work-portfolio-title{
+        padding: 0px 20px;
+        font-size: 1.3em;
+    }
+
+    .work-portfolio-div{
+        padding: 20px 30px;
+    }
+
+    .work-portfolio-company-div{
+        p{
+            padding: 60px 40px;
+        }
+    }
+    
+    .work-portfolio-company-review-div{
+        padding: 20px 0px;
+    
+        .comment{
+            font-size: 1em;
+            font-weight: normal;
+        }
+        .name{
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 414px) {
+
+    .work-portfolio-outer-div{
+        padding: 30px 10px;
+    }
+    
+    .work-portfolio-title{
+        padding: 0px 10px;
+        font-size: 1.3em;
+    }
+
+    .work-portfolio-div{
+        padding: 20px 30px;
+        display: block;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .work-portfolio-company-div{
+        p{
+            background-color: #F45B21;
+            color: #FFFFFF;
+            padding: 60px 40px;
+            border-radius: 50%;
+            text-align: center;
+        }
+    }
+    
+    .work-portfolio-company-review-div{
+        padding: 20px 0px;
+    
+        .comment{
+            font-size: 1em;
+            font-weight: normal;
+        }
+    
+        .name{
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width: 280px) {
+
+    .work-portfolio-outer-div{
+        padding: 30px 0px;
+    }
+    
+    .work-portfolio-title{
+        padding: 0px 10px;
+        font-size: 1.3em;
+    }
+
+    .work-portfolio-div{
+        padding: 20px 30px;
+        display: block;
+        justify-content: start;
+    }
+
+    .work-portfolio-company-div{
+        p{
+            background-color: #F45B21;
+            color: #FFFFFF;
+            padding: 60px 40px;
+            border-radius: 50%;
+            text-align: center;
+        }
+    }
+    
+    .work-portfolio-company-review-div{
+        padding: 20px 0px;
+    
+        .comment{
+            font-size: 1em;
+            font-weight: normal;
+        }
+    
+        .name{
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+    }
+
+}

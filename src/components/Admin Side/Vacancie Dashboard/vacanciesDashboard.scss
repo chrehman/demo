@@ -1,0 +1,163 @@
+
+.vacancies-card-outer-div{
+    padding: 20px 0px;
+}
+
+.vacancies-card{
+    border-radius: 10px !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 50px;
+
+    .single-vacancie-div{
+        padding: 20px 0px 0px 0px;
+        border-bottom: 1px solid #0000003f;
+
+        .vacancie-edit-btn-div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0px;
+
+            .heading{
+                font-size: 1.3em;
+                font-weight: bold;
+                margin: 0%;
+            }
+
+            .edit{
+                font-size: 1.3em;
+                padding: 5px 10px 12px 10px;
+                color: #1f49bb;
+                border-radius: 50%;
+            }
+
+            .edit:hover{
+                cursor: pointer;
+                background-color: #1f49bb;
+                color: #ffffff;
+            }
+
+            .delete{
+                font-size: 1.3em;
+                padding: 5px 10px 12px 10px;
+                color: #bb1f1f;
+                border-radius: 50%;
+            }
+
+            .delete:hover{
+                cursor: pointer;
+                background-color: #bb1f1f;
+                color: #ffffff;
+            }
+        }
+
+        .discription{
+            font-size: 1em;
+        }
+    }
+
+    .vacancies-btn-div{
+        padding: 20px 0px;
+        display: flex;
+        justify-content: space-between;
+
+        .active{
+            background-color: #ffffff;
+            border: 1px solid #F45B21;
+            color: #F45B21;
+            font-size: 1.2em;
+            padding: 5px 10px;
+            border-radius: 10px;
+            transition: all .5s;
+        }
+    
+        .active:hover{
+            background-color: #F45B21;
+            color: #ffffff;
+        }
+    
+        .disable{
+            border: 1px solid #eeeeee;
+            color: #eeeeee;
+            font-size: 1.2em;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+    }
+}
+
+.vacancie-edit-form{
+
+    padding: 20px;
+
+    .labels{
+        margin: 0%;
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+
+    .title, .role{
+        margin: 10px 0px;
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        border: 1px solid #979797;
+        border-radius: 10px;
+    }
+
+    .discription-outer-div{
+        padding: 20px 0px;
+    }
+
+    .vacancie-edit-btn{
+        color: #F45B21;
+        border: 1px solid #F45B21;
+        border-radius: 10px;
+        padding: 10px 0px;
+        background-color: #ffffff;
+        width: 100%;
+        font-weight: 600;
+    }
+
+    .vacancie-edit-btn:hover{
+        background-color: #F45B21;
+        color: #ffffff;
+    }
+}
+
+.vacancie-add-form{
+
+    .labels{
+        margin: 0%;
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+
+    .title, .role{
+        margin: 10px 0px;
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        border: 1px solid #979797;
+        border-radius: 10px;
+    }
+
+    .discription-outer-div{
+        padding: 20px 0px;
+    }
+
+    .vacancie-add-btn{
+        color: #F45B21;
+        border: 1px solid #F45B21;
+        border-radius: 10px;
+        padding: 10px 0px;
+        background-color: #ffffff;
+        width: 100%;
+        font-weight: 600;
+        transition: all .5s;
+    }
+
+    .vacancie-add-btn:hover{
+        background-color: #F45B21;
+        color: #ffffff;
+    }
+}

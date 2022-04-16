@@ -1,0 +1,240 @@
+
+.email-handling-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+}
+
+.cards-outer-div{
+    padding: 20px 0px;
+}
+
+.user-email-card{
+    height: 100%;
+    border-radius: 10px !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 50px;
+
+    .user-email-card-div{
+        height: 500px;
+        overflow: scroll;
+        overflow-y: scroll;
+    }
+
+    .user-email-card-div::-webkit-scrollbar{
+        display: none;
+    }
+
+    .user-email-div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #eeeeee;
+    
+        p{
+            margin: 0%;
+            font-size: 1.3em;
+            display: flex;
+            align-items: center;
+        }
+    
+        span{
+            font-size: 1.3em;
+            height: fit-content;
+            width: fit-content;
+            color: #ff0000;
+            padding: 5px;
+        }
+    
+        span:hover{
+            cursor: pointer;
+            background-color: #ff0000;
+            color: #ffffff;
+
+            span{
+                cursor: pointer;
+                background-color: #ff0000;
+                color: #ffffff;
+            }
+        }
+    }
+    
+    .user-email-div:hover{
+        background-color: #eeeeee;
+        cursor: pointer;
+    }
+    
+    .mails-btn-div{
+        padding: 20px 0px;
+        display: flex;
+        justify-content: space-between;
+    
+        .active{
+            background-color: #ffffff;
+            border: 1px solid #F45B21;
+            color: #F45B21;
+            font-size: 1.2em;
+            padding: 5px 10px;
+            border-radius: 10px;
+            transition: all .5s;
+        }
+    
+        .active:hover{
+            background-color: #F45B21;
+            color: #ffffff;
+        }
+    
+        .disable{
+            border: 1px solid #eeeeee;
+            color: #eeeeee;
+            font-size: 1.2em;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+
+.send-email-card{
+    border-radius: 10px !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 50px;
+    height: 100%;
+
+    .send-email-div{
+        height: 500px;
+        overflow: scroll;
+
+        .send-mail-btn{
+            border: 1px solid #F45B21;
+            background-color: #ffffff;
+            color: #F45B21;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-weight: 600;
+            transition: all .5s;
+        }
+
+        .send-mail-btn:hover{
+            background-color: #F45B21;
+            color: #ffffff;
+        }
+    }
+}
+
+.user-mails-card{
+    border-radius: 10px !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 50px;
+
+    .user-mail-div{
+        div{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .labels{
+            font-size: 1.2em;
+            font-weight: 600;
+            display: flex;
+            margin: 0%;
+            padding: 10px 0px;
+
+            span{
+                font-weight: 600;
+                color: gray;
+            }
+
+            button{
+                background: none;
+                border: none;
+                text-decoration: underline;
+            }
+        }
+
+        .delete-btn{
+            display: flex;
+            align-items: center;
+            padding: 0px 10px;
+            font-size: 1.3em;
+
+            span{
+                color: #ff0000;
+                background-color: #ffffff;
+                padding: 0px 10px;
+                margin: 0%;
+            }
+            
+        }
+
+        .delete-btn:hover{
+            cursor: pointer;
+            span{
+                font-weight: bolder;
+            }
+        }
+    }
+
+    .mails-btn-div{
+        padding: 20px 0px;
+        display: flex;
+        justify-content: space-between;
+    
+        .active{
+            background-color: #ffffff;
+            border: 1px solid #F45B21;
+            color: #F45B21;
+            font-size: 1.2em;
+            padding: 5px 10px;
+            border-radius: 10px;
+            transition: all .5s;
+        }
+    
+        .active:hover{
+            background-color: #F45B21;
+            color: #ffffff;
+        }
+    
+        .disable{
+            border: 1px solid #eeeeee;
+            color: #eeeeee;
+            font-size: 1.2em;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .email-handling-div{
+        display: block;
+
+        .email-handling-card-outer-div{
+            padding: 10px 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    .user-mails-card{
+
+        .user-mail-div{
+            
+            div{
+                display: block;
+            }
+
+            .labels{
+                font-size: 1em;
+                font-weight: normal;
+    
+                span{
+                    font-weight: normal;
+                }
+            }
+        }
+
+    }
+}

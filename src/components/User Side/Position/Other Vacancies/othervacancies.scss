@@ -1,0 +1,170 @@
+
+.other-vacancies-outer-div{
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+}
+
+.other-vacancies-title{
+    font-size: 2em;
+    font-weight: bold;
+    width: fit-content;
+    display: block;
+    margin: 0%;
+    padding: 0%;
+}
+
+.other-vacancies-title-underline{
+    background-color: #F45B21;
+    margin: 0px 0px 0px 3px;
+    height: 5px;
+    width: 50%;
+}
+
+.vacancies-div{
+    padding: 50px 0px;
+}
+
+.other-vacancie-div{
+    margin: 50px 0px;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 20px;
+    transition: all .5s;
+
+    .job-title{
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 0%;
+    }
+
+    .apply-btn{
+        border: 2px solid #6A2D94;
+        color: #6A2D94;
+        padding: 10px 50px;
+        font-size: 1.4em;
+        font-weight: 600;
+        border-radius: 10px;
+        height: fit-content; 
+        text-decoration: none;
+    }
+
+    .apply-btn:hover{
+        background-color: #6A2D94;
+        color: #ffffff;
+        cursor: pointer;
+    }
+}
+
+.other-vacancie-div:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.vacancie-apply-btn:hover{
+    background-color: #6A2D94;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.all-vacancies-link{
+    color: #6A2D94;
+    font-size: 1.4em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+    span{
+        padding: 0px 5px;
+    }
+}
+
+.all-vacancies-link:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+
+    .other-vacancies-outer-div{
+        padding: 80px;
+    }
+
+    .other-vacancies-title{
+        font-size: 1.6em;
+    }
+
+   
+}
+
+@media screen and (max-width: 1024px) {
+
+    .other-vacancies-outer-div{
+        padding: 50px;
+    }
+
+    .other-vacancies-title{
+        font-size: 1.3em;
+    }
+
+    .vacancies-div{
+        padding: 20px 0px;
+    }
+
+    .other-vacancie-div{
+        .job-title{
+            font-size: 1.3em;
+        }
+    }
+
+    .all-vacancies-link{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .other-vacancie-div{
+
+        .job-title{
+            font-size: 1.2em;
+        }
+    
+        .apply-btn{
+            padding: 10px 10px;
+            font-size: 1em;
+        }
+    }
+}
+
+
+@media screen and (max-width: 540px) {
+
+    .other-vacancies-outer-div{
+        padding: 30px;
+    }
+
+    .other-vacancies-title{
+        font-size: 1.3em;
+    }
+
+    .vacancies-div{
+        padding: 20px 0px;
+    }
+
+    .all-vacancies-link{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .other-vacancies-outer-div{
+        padding: 10px;
+    }
+
+    .all-vacancies-link{
+        font-size: 0.8em;
+    }
+}
