@@ -13,7 +13,7 @@ import MobileApp from './components/User Side/Services/Mobile Application/layout
 import WebApp from './components/User Side/Services/Web Application/layout'
 import DataScience from './components/User Side/Services/Data Science/layout'
 import AdminSide from './components/Admin Side/Routes'
-import {BrowserRouter as Router, Route, Routes, Navigate} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
 import PageNotFound from './components/404/404'
 import { useEffect, useState } from 'react'
 import { Spin } from 'antd'
@@ -30,9 +30,9 @@ function App() {
 
   useEffect(() => {
     const link = window.location.href
-    if(link.includes('admin')){
+    if (link.includes('admin')) {
       setAdmin(true)
-    }else{
+    } else {
       setDelay(true)
     }
   }, [])
@@ -41,39 +41,39 @@ function App() {
     <div className="App">
       {
         Admin ? <AdminSide /> : delay ?
-        <div>
-          <Router>
-            <Routes>
-                <Route path='/contact' element = {<Contact/>}/>
-                <Route path='/careers' element = {<Career/>}/>
-                <Route path='/position/*' element = {<Position/>}/>
-                <Route path='/pricing' element = {<Pricing/>}/>
-                <Route path='/services'>
-                  <Route path='/ai' element = {<ArtificialIntelligence />}/>
-                  <Route path='/ml' element = {<MachineLearning />}/>
-                  <Route path='/blockchain' element = {<Blockchain />}/>
-                  <Route path='/cloud' element = {<CloudComputing />}/>
-                  <Route path='/big_data' element = {<BigData />}/>
-                  <Route path='/data_science' element = {<DataScience />}/>
-                  <Route path='/digital_media' element = {<DigitalMedia />}/>
-                  <Route path='/web_app' element = {<WebApp />}/>
-                  <Route path='/mobile_app' element = {<MobileApp />}/>
-                  <Route path='*' element = {<PageNotFound />}/>
-                </Route>
-                <Route path='/home' element = {<Home/>}/>  
-                <Route path="/" element = {<Navigate replace to="/home" />} />
-                <Route path='*' element = {<PageNotFound />}/>
-            </Routes>
-          </Router>
-        </div> :
-        <div className='spinner-div'>
           <div>
+            <Router>
+              <Routes>
+                <Route path='/home' element={<Home />} />
+                <Route path="/" element={<Navigate replace to="/home" />} />
+                <Route path='/contact' element={<Contact />} />
+                <Route path='/careers' element={<Career />} />
+                <Route path='/position/*' element={<Position />} />
+                <Route path='/pricing' element={<Pricing />} />
+                <Route path='/services'>
+                  <Route path='/ai' element={<ArtificialIntelligence />} />
+                  <Route path='/ml' element={<MachineLearning />} />
+                  <Route path='/blockchain' element={<Blockchain />} />
+                  <Route path='/cloud' element={<CloudComputing />} />
+                  <Route path='/big_data' element={<BigData />} />
+                  <Route path='/data_science' element={<DataScience />} />
+                  <Route path='/digital_media' element={<DigitalMedia />} />
+                  <Route path='/web_app' element={<WebApp />} />
+                  <Route path='/mobile_app' element={<MobileApp />} />
+                  <Route path='*' element={<PageNotFound />} />
+                </Route>
+                <Route path='*' element={<PageNotFound />} />
+              </Routes>
+            </Router>
+          </div> :
+          <div className='spinner-div'>
+            <div>
               <Spin indicator={antIcon} />
               <p>Loading...</p>
+            </div>
           </div>
-        </div>
       }
-      
+
     </div>
   );
 }
