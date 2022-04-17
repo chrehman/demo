@@ -49,23 +49,18 @@ function App() {
                 <Route path='/position/*' element = {<Position/>}/>
                 <Route path='/pricing' element = {<Pricing/>}/>
                 <Route path='/services'>
-                  <Route path='ai' element = {<ArtificialIntelligence />}/>
-                  <Route path='ml' element = {<MachineLearning />}/>
-                  <Route path='blockchain' element = {<Blockchain />}/>
-                  <Route path='cloud' element = {<CloudComputing />}/>
-                  <Route path='big_data' element = {<BigData />}/>
-                  <Route path='data_science' element = {<DataScience />}/>
-                  <Route path='digital_media' element = {<DigitalMedia />}/>
-                  <Route path='web_app' element = {<WebApp />}/>
-                  <Route path='mobile_app' element = {<MobileApp />}/>
+                  <Route path='/ai' element = {<ArtificialIntelligence />}/>
+                  <Route path='/ml' element = {<MachineLearning />}/>
+                  <Route path='/blockchain' element = {<Blockchain />}/>
+                  <Route path='/cloud' element = {<CloudComputing />}/>
+                  <Route path='/big_data' element = {<BigData />}/>
+                  <Route path='/data_science' element = {<DataScience />}/>
+                  <Route path='/digital_media' element = {<DigitalMedia />}/>
+                  <Route path='/web_app' element = {<WebApp />}/>
+                  <Route path='/mobile_app' element = {<MobileApp />}/>
                   <Route path='*' element = {<PageNotFound />}/>
                 </Route>
-                <Route path='/home' element = {<Home/>}>
-                  <Route path='about' element = {<Home/>}/>
-                  <Route path='services' element = {<Home/>}/>
-                  <Route path='portfolio' element = {<Home/>}/>
-                  <Route path='*' element = {<PageNotFound />}/>
-                </Route>
+                <Route path='/home' element = {<Home/>}/>  
                 <Route path="/" element = {<Navigate replace to="/home" />} />
                 <Route path='*' element = {<PageNotFound />}/>
             </Routes>
